@@ -5,8 +5,8 @@ public class Ascend{
 		int x = 5;
 		int y = 8;
 		int z = 25; 
-		System.out.println( x );
-		System.out.println(y );
-		System.out.println(z );
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
 	}
 }
