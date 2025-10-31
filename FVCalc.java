@@ -6,7 +6,7 @@ public class FVCalc {
 		double precentincrease = Double.parseDouble(args[1]);
 		double years = Double.parseDouble(args[2]);
 		double FinalAmount = startinginvestment * Math.pow(1 + precentincrease / 100 , years);
-		System.out.println("After " + years + " years , $" + startinginvestment + " saved at " + precentincrease + "%" + ((int)years) + " will yield $" + ((int)FinalAmount));
+		System.out.println("After " + years + " years , $" + (int)startinginvestment + " saved at " + precentincrease +  "% will yield $" + ((int)FinalAmount));
 
 	}
 
