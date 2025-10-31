@@ -7,9 +7,10 @@ public class Bill3 {
 		String name3 = args[2]; // Nadav 
 		double BillAmount = Double.parseDouble(args[3]); // 240 
 		double eachCheck = BillAmount / 3;
-		System.out.println( name3 + " my check is " + eachCheck );
-		System.out.println(name2 + " my check is " + eachCheck);
-		System.out.println(name1 + " my check is " + eachCheck); 
+		double RoundedCheck = Math.ceil(eachCheck);
+		System.out.println("Dear " + name3 + " , " + RoundedCheck + " Shekels each." );
+		System.out.println("Dear " + name2 + " , " + RoundedCheck + " Shekels each.");
+		System.out.println("Dear " + name1 + " , " + RoundedCheck + " Shekels each."); 
 
 		
 
