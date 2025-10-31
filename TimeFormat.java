@@ -12,8 +12,9 @@ public class TimeFormat {
         String period = periods[hour / 12];
 
         
-        int[] hours12 = {12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
-        int hour12 = hours12[hour % 12];
+        
+        int hour12 = (hour % 12 == 0) ? 0 : hour % 12;
+
 
         
         System.out.printf("%d:%02d %s%n", hour12, minute, period);
