@@ -8,7 +8,7 @@ public class Bill3 {
 		double BillAmount = Double.parseDouble(args[3]); // 240 
 		double eachCheck = BillAmount / 3;
 		double RoundedCheck = Math.ceil(eachCheck);
-		System.out.println("Dear " + name3 + " , " + name2  + ", and " + name1 + " pay " +  RoundedCheck + " Shekels each." );
+		System.out.println("Dear " + name3 + ", " + name2  + ", and " + name1 + ": pay " +  RoundedCheck + " Shekels each.");
 		
 		 
 
