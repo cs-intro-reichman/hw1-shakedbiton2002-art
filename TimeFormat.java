@@ -7,9 +7,9 @@ public class TimeFormat {
         
         String period;
         if (H >= 12) {
-            period = "pm";
+            period = "PM";
         } else {
-            period = "am";
+            period = "AM";
         }
 
         if (H == 0) {
@@ -27,4 +27,3 @@ public class TimeFormat {
         }
     }
 }
-
