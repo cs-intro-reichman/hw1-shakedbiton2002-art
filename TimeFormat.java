@@ -1,19 +1,30 @@
 // Represents the hh:mm time format using an AM/PM format. 
 public class TimeFormat {
     public static void main(String[] args) {
+        String[] parts = args[0].split(":"); // מפריד את הקלט לשעה ולדקות
+        int H = Integer.parseInt(parts[0]);
+        int M = Integer.parseInt(parts[1]);
         
-        String[] parts = args[0].split(":");
-        int hour = Integer.parseInt(parts[0]);
-        int minute = Integer.parseInt(parts[1]);
+        String period;
+        if (H >= 12) {
+            period = "pm";
+        } else {
+            period = "am";
+        }
 
-       
-        String[] periods = {"AM", "PM"};
-        String period = periods[hour / 12];
+        if (H == 0) {
+            H = 12;
+        }
 
-       
-        int hour12 = (hour == 0) ? 0 : (hour % 12 == 0 ? 12 : hour % 12);
+        if (H > 12) {
+            H = H - 12;
+        }
 
-        
-        System.out.printf("%d:%02d %s%n", hour12, minute, period);
+        if (M < 10) {
+            System.out.println(H + ":0" + M + " " + period);
+        } else {
+            System.out.println(H + ":" + M + " " + period);
+        }
     }
 }
+
